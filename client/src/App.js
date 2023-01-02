@@ -7,6 +7,8 @@ import axios from 'axios'
 import Main from './components/layouts/Main';
 import SymptomsMenu from './pages/SymptomsMenu';
 import CreatePost from './components/CreatePost';
+import UserProfile from './pages/UserProfile';
+
 function App() {
   const { dispatch, token, isLoggedIn } = useContext(AuthContext)
 
@@ -40,6 +42,7 @@ function App() {
         <Route path="/" element={isLoggedIn?<Main />:<Authentication />}/>
         <Route path="/symptoms" element={<SymptomsMenu />}/>
         <Route path="/createyourpost" element={<CreatePost />}/>
+        <Route path="/profile" element={<UserProfile />}/>
       </Routes>
     </div>
   )

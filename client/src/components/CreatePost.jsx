@@ -100,6 +100,7 @@ const CreatePost = () => {
       text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500
        focus:border-blue-500" placeholder="Write your Help"></textarea>
       <div className='mt-5 flex justify-center'>
+        <Link to={'/'}><button className='bg-orange-400 w-20 h-10 uppercase rounded-lg mr-8'>Back</button></Link>
         <button className='bg-orange-400 w-20 h-10 uppercase rounded-lg' onClick={addinpdata}>Submit</button>
       </div>
     </div>

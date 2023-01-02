@@ -4,7 +4,7 @@ import Community from '../components/Community'
 import Footer from '../components/Footer'
 import bg from '../assets/bg.svg'
 
-export default function SymptomsMenu () {
+export default function Community () {
     return (
         <div>
             <Navbar />
